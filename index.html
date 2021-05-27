@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Etch-a-Sketch</title>
+		<meta charset="utf-8">
+		<link href="styles/layout.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<h1>Etch-a-Sketch</h1>
+		<header>
+			<button id="color-selector" class="option-btn">
+				Pen Color:<input type="color" id="pen-color">
+			</button>
+			<button id="erase-btn" class="options option-btn">Eraser</button>
+			<button id="rainbow-btn" class="options option-btn">Rainbow</button>
+			<button id="black-btn" class="options option-btn">Black</button>
+			<button id="clear-canvas-btn" class="options option-btn">Clear</button>
+		</header>
+		<main>
+			<div id="container">
+			</div>
+		</main>
+		<footer>
+			<span id="pixel-slider" class="options">
+				<label for="squares">Pixel Size</label>
+				<input type="range" min="4" max="100" value="20" id="squares" class="slider">
+				<p>Current Size: 16 per side</p>
+			</span>
+		</footer>
+		<script src="scripts/etchasketch.js" type="text/javascript"></script>
+	</body>
+</html>
